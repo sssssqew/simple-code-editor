@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Code Editor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css" integrity="sha512-uf06llspW44/LZpHzHT6qBOIVODjWtv4MxCricRxkzvopAlSWnTf6hpZTFxuuZcuNE9CBQhqE0Seu1CoRk84nQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/yonce.min.css" integrity="sha512-34KvyN6vsoyrDzJucLXCwu8HSKGPlOffTJT2nyOGCmuXRjawuG8Uo5qE1+vDsnQ+RqDKE6FYWeUEDcpY0bFiPQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <button id="run-btn">Run</button>
+    <a id="download-btn" href="#" download="index.html">Download</a>
+  </div>
+  <div class="editor">
+    <div class="code">
+      <div class="html-code"></div>
+      <div class="css-code"></div>
+      <div class="js-code"></div>
+    </div>
+    <div class="preview">
+      <iframe id="preview-window"></iframe>
+    </div>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js" integrity="sha512-hG/Qw6E14LsVUaQRSgw0RrFA1wl5QPG1a4bCOUgwzkGPIVFsOPUPpbr90DFavEEqFMwFXPVI0NS4MzKsInlKxQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js" integrity="sha512-LarNmzVokUmcA7aUDtqZ6oTS+YXmUKzpGdm8DxC46A6AHu+PQiYCUlwEGWidjVYMo/QXZMFMIadZtrkfApYp/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js" integrity="sha512-oikhYLgIKf0zWtVTOXh101BWoSacgv4UTJHQOHU+iUQ1Dol3Xjz/o9Jh0U33MPoT/d4aQruvjNvcYxvkTQd0nA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js" integrity="sha512-I6CdJdruzGtvDyvdO4YsiAq+pkWf2efgd1ZUSK2FnM/u2VuRASPC7GowWQrWyjxCZn6CT89s3ddGI+be0Ak9Fg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+</body>
+</html>

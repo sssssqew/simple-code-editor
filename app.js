@@ -2,19 +2,22 @@ const htmlEditor = CodeMirror(document.querySelector('.editor .code .html-code')
   lineNumbers: true,
   tabSize: 2,
   mode: 'xml',
-  theme: 'yonce'
+  theme: 'yonce',
+  scrollbarStyle: "null"
 })
 const cssEditor = CodeMirror(document.querySelector('.editor .code .css-code'), {
   lineNumbers: true,
   tabSize: 2,
   mode: 'css',
-  theme: 'yonce'
+  theme: 'yonce',
+  scrollbarStyle: "null"
 })
 const jsEditor = CodeMirror(document.querySelector('.editor .code .js-code'), {
   lineNumbers: true,
   tabSize: 2,
   mode: 'javascript',
-  theme: 'yonce'
+  theme: 'yonce',
+  scrollbarStyle: "null"
 })
 document.querySelector('#run-btn').addEventListener('click', function(){
   const htmlCode = htmlEditor.getValue()

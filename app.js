@@ -3,21 +3,21 @@ const htmlEditor = CodeMirror(document.querySelector('.editor .code .html-code')
   tabSize: 2,
   mode: 'xml',
   theme: 'yonce',
-  scrollbarStyle: "null"
+  scrollbarStyle: "null" // 추가
 })
 const cssEditor = CodeMirror(document.querySelector('.editor .code .css-code'), {
   lineNumbers: true,
   tabSize: 2,
   mode: 'css',
   theme: 'yonce',
-  scrollbarStyle: "null"
+  scrollbarStyle: "null" // 추가 
 })
 const jsEditor = CodeMirror(document.querySelector('.editor .code .js-code'), {
   lineNumbers: true,
   tabSize: 2,
   mode: 'javascript',
   theme: 'yonce',
-  scrollbarStyle: "null"
+  scrollbarStyle: "null" // 추가
 })
 document.querySelector('#run-btn').addEventListener('click', function(){
   const htmlCode = htmlEditor.getValue()
